@@ -6,9 +6,9 @@
 body {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: 0rem;
+  font-size: 0.600rem;
   color: #babbbc;
-  {background-image:url(/images/2.jpg?2);background-size:1920px 1080px}
+  background: url(../img/2.jpg);background-size:1920px 1080px
   background-size: cover; }
 
 img {
