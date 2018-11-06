@@ -30,7 +30,7 @@ h1, h2, h3, p {
   margin: 0; }
 
 h1 {
-  font-size: calc(0.400rem + 3vw);
+  font-size: calc(0.400rem + 2vw);
   font-weight: 10;
   color: #FFF;
   text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); }
