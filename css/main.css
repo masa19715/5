@@ -5,7 +5,7 @@
 
 body {
   background-image: url(../img/4.jpg);
-  background-image2: url(../img/csplugin.png);
+  background-image: url(../img/csplugin.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
