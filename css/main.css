@@ -8,7 +8,7 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 0rem;
   color: #babbbc;
-  background: url(../img/2.jpg);
+  background-image:url(/images/2.jpg);background-size:32px 254px
   background-size: cover; }
 
 img {
