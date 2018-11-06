@@ -59,8 +59,8 @@ h3 {
 
 .title {
   grid-column: 1 /span 3;
-  grid-row-end: 3;
-  z-index: 80; }
+  grid-row-end: 2;
+  z-index: 10; }
 
 .team-member {
   border: 12px solid white;
