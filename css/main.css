@@ -4,15 +4,15 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0;
+  margin: 1920;
   font-family: "Playfair Display", serif;
-  font-size: 1.125rem;
+  font-size: 2.125rem;
   color: #babbbc;
   background: url(../img/2.jpg);
   background-size: cover; }
 
 img {
-  max-width: 5%;
+  max-width: 100%;
   height: auto; }
 
 h1, h2, h3, p {
