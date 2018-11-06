@@ -60,7 +60,7 @@ h3 {
 .title {
   grid-column: 1 /span 3;
   grid-row-end: 2;
-  z-index: 10; }
+  z-index: 100; }
 
 .team-member {
   border: 12px solid white;
