@@ -1,41 +1,342 @@
-<!doctype html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>CS-OSBN</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-        <link rel="stylesheet" href="css/main.css">
-      </head>
-      
-    <body>
+﻿<html lang="ru">
+	<head>
+	  <meta charset="utf-8">
+	  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <div class="container">
-      <h1 class="title">CSPLUGIN [NOSKO_MDL] [Плагины для CS 1.6 на заказ]</h1>  
+	  <title>Linux Game Control Panel</title>
+	  <meta content="Скрипты развертывания игровых серверов на ОС Linux" name="descriptison">
+	  <meta content="Linux, OS, скрипты, LGCP, Counter-Strike Android, CS Android, CS 1.6, ReLGCP" name="keywords">
+	  <meta content="AMX HELP" name="author">
 
-      <div class="team-member member-1">
-        <img src="img/csplugin.png" alt="">
-        <h2>Александр Мейрабов</h2>
-            <h3>VK.COM/CSPLUGIN_OPTIMUS</h3>
-        <p></p>
-      </div>
+	  <link href="templates\avilon\img\favicon.png" rel="icon">
+	  <link href="templates\avilon\img\apple-touch-icon.png" rel="apple-touch-icon">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+	  <link href="templates\avilon\vendor\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+	  <link href="templates\avilon\vendor\ionicons\css\ionicons.min.css" rel="stylesheet">
+	  <link href="templates\avilon\vendor\animate.css\animate.min.css" rel="stylesheet">
+	  <link href="templates\avilon\vendor\font-awesome\css\font-awesome.min.css" rel="stylesheet">
+	  <link href="templates\avilon\vendor\venobox\venobox.css" rel="stylesheet">
+	  <link href="templates\avilon\css\style.css" rel="stylesheet">
+	</head><body>
+	<header id="header">
+	<div class="container">
+		<div id="logo" class="pull-left">
+			<h1><a href="index.htm" class="scrollto">AMX-HELP</a></h1>
+		</div>
+		<nav id="nav-menu-container">
+			<ul class="nav-menu">
+				<li class="menu-active"><a href="index.htm">Главная</a></li>
+				
+				<li class="menu-has-children"><a href="">Скрипты</a>
+					<ul>
+						<li><a href="#relgcp">ReLGCP PC</a></li>
+						<li><a href="#relgcp_android">ReLGCP Android</a></li>
+					</ul>
+				</li>
+				<li class="menu-active"><a href="#faq">F.A.Q</a></li>
+				<li class="menu-active"><a href="#install">Установка</a></li>
+				<li class="menu-active"><a href="https://vk.com/topic-171419060_39378804" target="_blank">Отзывы</a></li>
+				<li class="menu-active"><a href="https://vk.com/zombi_atak" target="_blank">Автор в VK</a></li>
+				<li class="menu-active"><a href="https://vk.com/amx_help" target="_blank">Мы ВКонтакте!</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<section id="intro">
+		<div class="intro-text">
+			<h2>Linux Game Control Panel</h2>
+			<p>Скрипты развертывания игровых серверов на ОС Linux</p>
+					<a href="#relgcp" class="btn-get-started">CS 1.6 PC</a>
+			<a href="#relgcp_android" class="btn-get-started">CS 1.6 Android</a>
+			<a href="#faq" class="btn-get-started">Что такое VDS?</a>
+			<a href="#install" class="btn-get-started">Установка скриптов</a>
+			
+		</div>
+	</section>
+	
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
 
-      <div class="team-member member-2">
-        <img src="img/csplugin1.png" alt="">
-        <h2>Егор Кузьмин</h2>
-        <h3>VK.COM/CSPLUGIN</h3>
-        <p></p>
-      </div>
+	<!-- VK Widget -->
+	<div id="vk_community_messages"></div>
+	<script type="text/javascript">
+	VK.Widgets.CommunityMessages("vk_community_messages", 171419060, {widgetPosition: "left",disableExpandChatSound: "1",disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
+	</script>
+	<main id="main">
+		<section id="relgcp">
+			<div class="container-fluid">
+				<div class="features-row section-bg">
+					<div class="container">
 
-      <div class="team-member member-3">
-        <img src="img/csplugin2.png" alt="">
-        <h2>Максим Носко</h2>
-        <h3>VK.COM/NOSKO_MDL</h3>
-        <p></p>
-      </div>
+						<div class="section-header">
+							<h2 class="section-title">ReLGCP PC версия</h2>
+							<span class="section-divider"></span>
+							<p class="section-description">Многофункциональный скрипт установки и управления игровыки серверами CS 1.6 на VDS!</p>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="advanced-feature-img-right wow fadeInRight" data-wow-duration="0.5s">
+									<img class="img-fluid" style="width: 380px;" src="uploads\images\pc.jpg" alt="">
+									<br><br>
+									<center><h4>Купить за<span class="text-success"> <b>200</b></span> рублей</h4></center>
+					
+									<center><a href="#relgcp_action">Перейти к оплате</a></center>
+								</div>
+								<div class="wow fadeInLeft" data-wow-duration="0.5s">
+									<h4 class="text-center text-info">Функционал скрипта</h4>
+									<ul class="list-unstyled">
+										<li>- Настройка чистой VDS(VPS) под игровые сервера CS 1.6 в 1 клик;</li>
+										<li>- Установка неограниченного количества игровых серверов CS 1.6 с нужной конфигурацией в 1 клик;</li>
+										<li>- Установка полностью автоматической и скоростной FastDL (быстрая загрузка) для всех игровых серверов;</li>
+										<li>- Авторестарт игровых серверов при их падении в течение 1 минуты;</li>
+										<li>- Запуск, остановка, рестарт игровых серверов;</li>
+										<li>- Доступ к консолям игровых серверов;</li>
+										<li>- Переустановка игрового сервера в 1 клик;</li>
+										<li>- Автоматиская установка любой сборки из архива в 1 клик;</li>
+										<li>- Функциональная система резервного копирования;</li>
+										<li>- Система выдачи привилегий (users.ini);</li>
+										<li>- Система расписаний (рестарт игровых серверов по расписанию);</li>
+										<li>- Автоматическое обновление скрипта в 1 клик.</li>
+									</ul>
+									<p>Это лишь основные функции скрипта, на практике их намного больше. Так же скрипт постоянно обновляется, расширяя свой функционал</p>
+									<p>Купить без комиссии можно у автора скрипта.</p>
+								</div>
+							</div>
+						</div>
+						<div class="features-row">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<img class="advanced-feature-img-left wow fadeInLeft" data-wow-duration="0.5s" style="width: 380px;" src="uploads\images\pc2.jpg" alt="">
+										<div class="wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+											<h4 class="text-center text-info">Условия покупки</h4>
+												<ul class="list-unstyled">
+													<li>- Скрипт продается с привязкой к IP VDS, но при этом не ограничивает количество серверов на 1 VDS</li>
+													<li>- После покупки вы получите лицензию на скрипт, инструкцию и видео по установке и настройке скрипта</li>
+													<li>- Все обновления скрипта бесплатные для покупателей</li>
+													<li>- Тех поддержка от автора скрипта по его установке, настройке и работе</li>
+													<li>- Возможна помощь в виде консультаций по вопросам игровых серверов CS 1.6</li>
+												</ul>
+												<p>Актуальная версия скрипта: <span class="text-success">5.2.1</span><br>Требуется ОС: <span class="text-success">Ubuntu 18.04</span></p>
+									
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="relgcp_action">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center text-lg-left">
+						<center>
+							<div class="col-lg-6">
+								<h4 class="text-white text-center">Оформить заказ</h4>
+								<form class="text-center" id="formBuyScript">
+									<div id="buyResult"></div>
+									<input type="text" name="productAddress" class="form-control" placeholder="IP адрес" pattern="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$" required="">
+									<input type="hidden" value="1" name="buy_product">
+									<input type="hidden" value="1" name="productIndex">
+									<button type="submit" class="btn btn-block btn-success my-2">Перейти к оплате</button>
+								</form>
+							</div>
+						</center>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="relgcp_android">
+			<div class="container-fluid">
+				<div class="features-row section-bg">
+					<div class="container">
+						<div class="section-header">
+							<h2 class="section-title">ReLGCP Android версия</h2>
+							<span class="section-divider"></span>
+							<p class="section-description">Android CS в последнее время активно развивается, а так же там не нужно платить деньги за раскрутку, все бесплатно. В связи с этим был разработан скрипт под эту игру с почти полным функционалом PC версии!</p>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="advanced-feature-img-right wow fadeInRight" data-wow-duration="0.5s">
+									<img class="img-fluid" style="width: 380px;" src="uploads\images\android.jpg" alt="">
+									<br><br>
+									<center><h4>Купить за<span class="text-success"> <b>200</b></span> рублей</h4></center>
+									<center><a href="#relgcp_android_action">Перейти к оплате</a></center>
+								</div>
+								<div class="wow fadeInLeft" data-wow-duration="0.5s">
+									<h4 class="text-center text-info">Функционал скрипта</h4>
+									<ul class="list-unstyled">
+										<li>- Настройка VDS;</li>
+										<li>- Установка и компиляция движка xash3d последней версии;</li>
+										<li>- Установка неограниченного количества серверов Android CS 1.6;</li>
+										<li>- Установка и настройка автоматической быстрой загрузки;</li>
+										<li>- Установка и настройка уникального автоподъема сервера;</li>
+										<li>- Многофункциональная система бекапов;</li>
+										<li>- Режим отладки;</li>
+										<li>- Выдача привилегий;</li>
+										<li>- Система расписаний;</li>
+										<li>- Удобный конфиг с настройками;</li>
+										<li>- Панель управления (запуск, выключение, рестарт, консоль, переустановка, обновление и др.);</li>
+									</ul>
+									<p>Это лишь основные функции скрипта, на практике их намного больше. Так же скрипт постоянно обновляется, расширяя свой функционал</p>
+									<p>Купить без комиссии можно у автора скрипта.</p>
+								</div>
+							</div>
+						</div>
+						<div class="features-row">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<img class="advanced-feature-img-left wow fadeInLeft" data-wow-duration="0.5s" style="width: 380px;" src="uploads\images\android2.jpg" alt="">
+										<div class="wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+											<h4 class="text-center text-info">Условия покупки</h4>
+												<ul class="list-unstyled">
+													<li>- Скрипт продается с привязкой к IP VDS, но при этом не ограничивает количество серверов на 1 VDS</li>
+													<li>- После покупки вы получите лицензию на скрипт, инструкцию и видео по установке и настройке скрипта</li>
+													<li>- Все обновления скрипта бесплатные для покупателей</li>
+													<li>- Тех поддержка от автора скрипта по его установке, настройке и работе</li>
+													<li>- Возможна помощь в виде консультаций по вопросам игровых серверов CS 1.6</li>
+												</ul>
+												<p>Актуальная версия скрипта: <span class="text-success">2.2.1</span><br>Требуется ОС: <span class="text-success">Ubuntu 18.04</span></p>
+												
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="relgcp_android_action">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center text-lg-left">
+						<center>
+							<div class="col-lg-6">
+								<h4 class="text-white text-center">Оформление заказа</h4>
+								<form class="text-center" id="formBuyScript_2">
+									<div id="buyResult_2"></div>
+									<input type="text" name="productAddress" class="form-control" placeholder="IP адрес" pattern="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$" required="">
+									<input type="hidden" value="1" name="buy_product">
+									<input type="hidden" value="2" name="productIndex">
+									<button type="submit" class="btn btn-block btn-success my-2">Перейти к оплате</button>
+								</form>
+							</div>
+						</center>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+				<section id="relgcp">
+			<div class="container-fluid">
+				<div id="faq" class="features-row section-bg">
+					<div class="container">
+						<div class="section-header">
+							<h2 class="section-title">F.A.Q по VDS</h2>
+							<span class="section-divider"></span>
+							<p class="section-description">Что такое VDS и почему это лучше чем Игровой Хостинг?</p>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="advanced-feature-img-right wow fadeInRight" data-wow-duration="0.5s">
+									<img class="img-fluid" style="width: 380px;" src="uploads\images\faq.png" alt="">
+								</div>
+								<div class="wow fadeInLeft" data-wow-duration="0.5s">
+								<p>Для начала разберемся, что такое VDS? Простыми словами VDS это тот же хостинг, но без привычной вам панели управления. Хостинги ставят свои панели управления на VDS и продают услуги в 5-10 раз дороже стоимости самой VDS. Вы же можете не переплачивать за услуги хостингов и самостоятельно открыть свой сервер на VDS. Так же в этом случае у вас будет ряд преимуществ перед хостингами:</p>
+									<ul class="list-unstyled">
+										<li>- Цена<br>Т.к. вы будете напрямую платить за вдс, не переплачивая за услуги хостингов, то цена будет значительно ниже. Например для сервера на 32 слота 1000 фпс достаточно конфигурации за 206р/мес (ссылка будет ниже). Так же вы можете найти VDS еще дешевле.</li>
+										<li>- Свобода выбора ресурсов и локаций<br>VDS вы можете взять в любой локации, а так же будете платить только за нужные ресурсы, т.к. вы сами определяете их (если вы плохо разбираетесь в необходимых ресурсах, ссылка для 1 сервера будет ниже, а так же можете писать в ЛС, подберем вам нужную конфигурацию).</li>
+										<li>- Выделенный айпи и порт<br>Это значит что у вашего сервера будет свой уникальный IP адрес (в отличии от хостингов, где на 1 айпи адресе стоят несколько серверов). Так же вы сможете указать любой доступный порт для своего сервера, например 27015.</li>
+										<li>- Изменение любых параметров сервера<br>Вы сможете задать произвольное количество FPS и слотов для своего сервера, а так же устанавливать pingboost.</li>
+										<li>- Полный доступ<br>У вас будет полный доступ к серверу и не будет никаких ограничений. Например некоторые хостинги не позволяют самостоятельно ставить билд, а так же запрещают установку некоторых модулей, в т.ч ботов.</li>
+										<li>- Стабильность<br>Это пожалуй самое основное преимущество VDS перед хостингами. На хостингах довольно таки часто случаются различного вида аварии и DDOS атаки, в следствии чего сервера начинают лагать, а бывает и вовсе отключаются. Скажу по своему опыту, держал сервер на VDS почти год и ни разу не случалось таких ситуаций, а все тех работы проводятся в ночное время и о них заблаговременно предупреждают.</li>
+										<li>- Мультизадачность<br>Возможность параллельно ставить несколько серверов и различных программ.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="relgcp">
+			<div class="container-fluid">
+				<div id="install" class="features-row section-bg">
+					<div class="container">
+						<div class="section-header">
+							<h2 class="section-title">Инструкция по установке</h2>
+							<span class="section-divider"></span>
+							<p class="section-description">Полная инструкция по установке скриптов на VDS после покупки.</p>
+						</div>
+						<div class="row">
+							<div class="col-12">
+									<div class="advanced-feature-img-right wow fadeInRight" data-wow-duration="0.5s">
+									<div><iframe src="//vk.com/video_ext.php?oid=-171419060&id=456239116&hash=2dc1ec3eaead6314&hd=2" width="540" height="304" frameborder="0" allowfullscreen=""></iframe></div>
+								
+								</div>
+								<div class="wow fadeInLeft" data-wow-duration="0.5s">
+									<ul class="list-unstyled">
+										<li>1. Скачать программу Putty (на пк) или Juce SSH/Admin Hand (на телефон).</li>
+										<li>2. Подключиться к вдс (в Putty вводим айпи вдс, жмем Open, далее вводим логин (root) и пароль от вдс.</li>
+										<li>3.  Вводим команду (можно скопировать и вставить в программу, нажав ПКМ)<br>
+											wget http://files.lgcp.ru/sc/install.x ; chmod +x install.x ; ./install.x (для PC версии)<br>
+											wget http://csxash.lgcp.ru/sc/install.x ; chmod +x install.x ; ./install.x (для Android версии)</li>
+										<li>4. Выполняем первоначальную установку и закрываем Putty. Далее все действия выполняются с пользователя, данные которого (логин, пароль) вы указали при установке.</li>
+										<li>5. Авторизовываемся в Putty с данными пользователя (айпи тот же, логин и пароль те что вы указали при установке)</li>
+										<li>6. Вводим команду ./install.x и устанавливаем нужный вам билд.</li>
+										<li>7. Установка завершена, теперь для управления сервера всегда заходим в Putty под данными вашего пользователя и вводим команду ./server.x</li>
+										<li>Для доступа по FTP можно использовать программу FileZilla, данные доступа, такие же как в Putty. Авторизоваемся с данными пользователя (порт 21).</li>
+										<li>В файле setting.cfg находятся настройки запуска (порт, фпс, пингбуст, слоты, стартовая карта).</li>
+										<li>В папке /serverfiles/cstrike находятся файлы сервера.</li>
+									</ul>
+										<p>Если у вас остались вопросы, пишите автору скрипта.</p>
 
-    </div>
-
-
-    </body>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="team" class="section-bg">
+			<div class="container">
+				<div class="section-header">
+					<h3 class="section-title">Последние продажи</h3>
+					<span class="section-divider"></span>
+					<p class="section-description">Список продаж через наш сайт!</p>
+				</div>
+				<div class="row wow fadeInUp">
+					<div class="col-lg-3 col-md-6"><div class="member"><div class="pic"><img src="uploads\images\pc.jpg"></div><h4>Скрипт ReLGCP CS 1.6<br>PC версия</h4><span>22.04.2020 в 18:57</span></div></div><div class="col-lg-3 col-md-6"><div class="member"><div class="pic"><img src="uploads\images\android.jpg"></div><h4>Скрипт ReLGCP CS 1.6<br>Android версия</h4><span>21.04.2020 в 13:47</span></div></div><div class="col-lg-3 col-md-6"><div class="member"><div class="pic"><img src="uploads\images\pc.jpg"></div><h4>Скрипт ReLGCP CS 1.6<br>PC версия</h4><span>20.04.2020 в 13:44</span></div></div><div class="col-lg-3 col-md-6"><div class="member"><div class="pic"><img src="uploads\images\pc.jpg"></div><h4>Скрипт ReLGCP CS 1.6<br>PC версия</h4><span>18.04.2020 в 14:09</span></div></div>
+				</div>
+				<a href="//showstreams.tv/"><img src="//www.free-kassa.ru/img/fk_btn/21.png" title="Бесплатный видеохостинг"></a>
+			</div>
+		</section>
+	</main>		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-lg-center text-center">
+						<div class="copyright">
+							Копирайт © 2020 <a href="https://vk.com/amx_help" target="_blank">AMX HELP</a>. Все права сохранены.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+		<script src="templates\avilon\vendor\jquery\jquery.min.js"></script>
+		<script src="templates\avilon\vendor\bootstrap\js\bootstrap.bundle.min.js"></script>
+		<script src="templates\avilon\vendor\jquery.easing\jquery.easing.min.js"></script>
+		<script src="templates\avilon\vendor\php-email-form\validate.js"></script>
+		<script src="templates\avilon\vendor\wow\wow.min.js"></script>
+		<script src="templates\avilon\vendor\venobox\venobox.min.js"></script>
+		<script src="templates\avilon\vendor\superfish\superfish.min.js"></script>
+		<script src="templates\avilon\vendor\hoverIntent\hoverIntent.js"></script>
+		<script src="templates\avilon\js\main.js"></script>
+		<script src="engine\classes\freekassa\ajax.js"></script>
+	</body>
 </html>
